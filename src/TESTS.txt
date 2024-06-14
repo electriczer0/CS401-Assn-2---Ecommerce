@@ -1,0 +1,34 @@
+ECommerceApp
+ getAction()
+ 	Check input validity including test cases: -1, 8, null, 'i' (arbitrary character), "test" (arbitrary string)
+ addItem()
+ 	Check input validity for itemNo: -1, 10 (nonexistant products), 'i', "test"
+ 	Check input validity for quantity -1, 0, 4.5, 'i', "test"
+ delItem
+ 	check input validity for lineNo: -1, 10, 4.5, 'i', "test"
+ checkOut()
+ 	confirm that cart has been emptied and can be used for new transactions
+ getDetails()
+	check input validity for itemNo: -1, 10, 4.5, 'i', "test"
+ ECommerceApp()
+ 	confirm that ECommerceApp cannot be instantiated due to private flag. 	
+
+Product
+ printDetails()
+	Confirm that header aligns with rows and that formatters functiona correctly regardless of instance data
+ printShort() 
+ 	See printDetails
+ lookupItem(itemNo)
+ 	Confirm expected functionality when itemNo is not found
+ exists(itemNo)
+ 	Confirm functionality when itemNo exists / does not exist
+		
+
+
+ShoppingCart
+ addLine(itemNo, qty)
+  confirm error handling; including !itemNo.exists, qty <=0, etc
+ delLine(lineNo)
+  confirm error handling !this.exists(lineNo)
+  confirm that line is appropriate deleted. 
+   
